@@ -39,7 +39,7 @@ function AudioList() {
   return (
     <div className="AudioList">
       <h2 className="title">
-        The list <span>12 songs</span>
+        The list <span>10 songs</span>
       </h2>
 
       <div className="songsContainer">
@@ -68,14 +68,14 @@ function AudioList() {
                       <i>
                         <FaHeadphones />
                       </i>
-                      95,490,102
+                      {song?.view}
                     </p>
 
                     <p className="duration">
                       <i>
                         <FaRegClock />
                       </i>
-                      03:04
+                      {song?.duration}
                     </p>
                     <div
                       className="favourite"
