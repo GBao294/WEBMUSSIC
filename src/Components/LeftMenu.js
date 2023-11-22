@@ -1,7 +1,8 @@
 import React from "react";
-import "../styles/LeftMenu.css";
-import { FaSpotify, FaEllipsisH } from "react-icons/fa";
 import { BiSearchAlt } from "react-icons/bi";
+import { FaEllipsisH } from "react-icons/fa";
+import GroupLogo from '../img/logo.png';
+import "../styles/LeftMenu.css";
 import { Menu } from "./Menu";
 import { MenuList } from "./MenuList";
 import { MenuPlayList } from "./MenuPlayList";
@@ -11,11 +12,10 @@ function LeftMenu() {
     <div className="leftMenu">
       <div className="logoContainer">
         <div className="logo">
-          <i>
-            <FaSpotify />
-          </i>
+        <img src={GroupLogo} alt="BigCo Inc. logo" style={{ width: '40px', height: '40px' }} />
 
-          <h2>Spotify</h2>
+
+          <h2>NerdyGroove</h2>
         </div>
 
         <i>

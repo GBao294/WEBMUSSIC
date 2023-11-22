@@ -17,3 +17,16 @@
   filter: grayscale(100);
   z-index: -1;
 }
+/* 
+.background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(img/Background-2.jpg) no-repeat center;
+  background-size: cover;
+  filter: grayscale(100);
+  z-index: -1;
+} */
+
