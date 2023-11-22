@@ -1,21 +1,24 @@
-import { BsFillHouseFill } from "react-icons/bs";
+import { BsFillHouseFill, BsPersonExclamation } from "react-icons/bs";
 
 const MenuList = [
   {
     id: 1,
     icon: <BsFillHouseFill />,
     name: "Home",
+    link: "#"
   },
   // {
   //   id: 2,
   //   icon: <BiPulse />,
   //   name: "Discover",
   // },
-  // {
-  //   id: 3,
-  //   icon: <FaBroadcastTower />,
-  //   name: "Radio",
-  // },
+  {
+    id: 2,
+    icon: <BsPersonExclamation />,
+    name: "AboutUs",
+    link: "https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository"
+
+  },
   // {
   //   id: 4,
   //   icon: <FaMicrophoneAlt />,

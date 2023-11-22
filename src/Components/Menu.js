@@ -21,14 +21,15 @@ function Menu({ title, listObject }) {
 
       <ul>
         {listObject &&
-          listObject.map((li) => (
-            <li key={li.id}>
-              <a href="#">
-                <i>{li.icon}</i>
-                <span> {li.name}</span>
-              </a>
-            </li>
-          ))}
+         listObject.map((li) => (
+          <li key={li.id}>
+            <a href={li.link ? li.link : "#"}>
+              <i>{li.icon}</i>
+              <span> {li.name}</span>
+            </a>
+          </li>
+        ))
+        }
       </ul>
     </div>
   );
