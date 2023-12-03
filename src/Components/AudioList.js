@@ -50,19 +50,24 @@ function AudioList() {
             <div
               className="songs"
               key={song?.id}
-              onClick={() => setMainSong(song?.song, song?.imgSrc, song?.songName, song?.artist)}
             >
               <div className="count">
                 <p>{`#${index + 1}`}</p>
               </div>
 
               <div className="song">
-                <div className="imgBox">
+                <div 
+                className="imgBox"
+                onClick={() => setMainSong(song?.song, song?.imgSrc, song?.songName, song?.artist)}
+                >
                   <img src={song?.imgSrc} alt="" />
                 </div>
 
                 <div className="section">
-                  <p className="songName">
+                  <p 
+                  className="songName"
+                  onClick={() => setMainSong(song?.song, song?.imgSrc, song?.songName, song?.artist)}
+                  >
                     {song?.songName}{" "}
                     <span className="songSpan">{song?.artist}</span>
                   </p>

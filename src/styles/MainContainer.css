@@ -1,10 +1,13 @@
 .mainContainer {
-  height: 100vh;
+  height: 86vh;
+  border-radius: 8px;
   flex-grow: 1;
   z-index: 1;
-  background: rgba(34, 34, 34, 0.6);
+  background: #121212;
   backdrop-filter: blur(10px);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 1vh 0.6vw;
+  overflow: scroll !important;
 }
 
 .Banner {
@@ -20,6 +23,7 @@
   height: 100%;
   object-fit: cover;
   filter: grayscale(100);
+  border-radius: 8px;
 }
 
 .Banner .bottom {
@@ -195,6 +199,7 @@
   color: #848484;
 }
 
+/*Audio List*/
 .AudioList {
   padding: 10px 30px;
 }
@@ -219,8 +224,8 @@
 .AudioList .songs {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 400;
   color: #848484;
   width: 100%;
   margin: 10px 0;
@@ -228,9 +233,13 @@
   padding-bottom: 5px;
 }
 
-.AudioList .songs.active,
-.AudioList .songs.active .song .section .songName .songSpan {
+.AudioList .songs.active {
   color: #f1f1f1 !important;
+}
+.AudioList .songs.active .count,
+.AudioList .songs.active .song .section .songName,
+.AudioList .songs.active .song .section .songName .songSpan{
+  color: #5ce1e6 !important;
 }
 
 .AudioList .songs .count {
@@ -274,8 +283,8 @@
 }
 
 .AudioList .songs .song .section .songName .songSpan {
-  margin-left: 0;
-  font-size: 12px;
+  margin-left: 5px;
+  font-size: 14px;
 }
 
 .AudioList .songs .song .section .hits {

@@ -52,8 +52,7 @@ h2{
 }
 .inputbox label{
     position: absolute;
-    top: 50%;
-    left: 5px;
+    top: 50%; left: 0;
     transform: translateY(-50%);
     color: #fff;
     font-size: 1em;
@@ -63,7 +62,7 @@ h2{
 
 input:focus ~ label,
 input:valid ~ label {
-top: -5px;
+top: -10px;
 }
 
 
@@ -124,17 +123,17 @@ button{
 .register p a:hover{
     text-decoration: underline;
 }
-.background2 {
+.background {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../img/Background-2.jpg) no-repeat center;
+    background: url(../img/background.jpg) no-repeat center;
     background-size: cover;
+    filter: grayscale(100);
     z-index: -1;
-  } 
-
+} 
 
   .error-message {
     color: red;

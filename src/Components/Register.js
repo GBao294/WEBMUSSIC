@@ -37,7 +37,7 @@ const checkConfirm = (event) =>{
 }
 
     return (
-        <div>
+        <div className='background2'>
             <title>NerdyGrooves Register</title>
             <div>
                 <section>

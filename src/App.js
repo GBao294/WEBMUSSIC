@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { AboutUs } from "./AboutUs";
 import "./App.css";
@@ -8,7 +8,6 @@ import { MainContainer } from "./Components/MainContainer";
 import { MusicProvider } from './Components/MusicContext';
 import { Register } from './Components/Register';
 import MusicPlayer from './Components/MusicPlayer';
-import { RightMenu } from "./Components/RightMenu";
 
 function Navigation() {
   return (
@@ -55,7 +54,6 @@ function App() {
             <LeftMenu />
             <MainContainer />
             <MusicPlayer/>
-            {/* <RightMenu /> */}
           </MusicProvider>
           </div>
          

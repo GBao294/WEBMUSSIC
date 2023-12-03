@@ -6,10 +6,8 @@ import "../styles/LeftMenu.css";
 import { Menu } from "./Menu";
 import { MenuList } from "./MenuList";
 import { MenuPlayList } from "./MenuPlayList";
-import TrackList from "./TrackList";
 import { Songs } from "./Songs";
 import { MusicContext } from './MusicContext';
-import AudioList  from "./AudioList";
 
 function LeftMenu() {
   const [searchText, setSearchText] = useState("");
@@ -57,7 +55,7 @@ function LeftMenu() {
 
       <div className="searchResult">
         {searchResults.map((result) => (
-          <a key={result.id} href={`#${result.id}`} className="card" onClick={() => setMainSong(result.song, result.imgSrc)}>
+          <a key={result.id} href={`#${result.id}`} className="card" onClick={() => setMainSong(result.song, result.imgSrc, result.songName, result.artist)}>
             <img src={result.imgSrc} alt={result.songName} />
             <p>{result.songName}</p>
           </a>
@@ -66,8 +64,7 @@ function LeftMenu() {
 
       <Menu title={"Menu"} listObject={MenuList} />
       <MenuPlayList />
-      <TrackList trackName={"Take On Me"} artistName={"A-ha"} />
-      
+      {/* <TrackList trackName={"Take On Me"} artistName={"A-ha"} /> */}
     </div>
   );
 }
