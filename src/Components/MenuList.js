@@ -19,11 +19,13 @@ const MenuList = [
     link: "/AboutUs"
 
   },
-  // {
-  //   id: 4,
-  //   icon: <FaMicrophoneAlt />,
-  //   name: "Artist",
-  // },
+
+  {
+    id: 4,
+    icon: <BsPersonExclamation />,
+    name: "Donate",
+    link: "https://test-payment.momo.vn/v2/gateway/pay?t=TU9NT3xNT01PMTcwMTg4MTA4NjkyNQ&s=d2e3f9d570ec617786157a3f96fc6aa99b8ccc3dbab2abee40635a99f480df5c"
+  },
   // {
   //   id: 5,
   //   icon: <BsJournalAlbum />,

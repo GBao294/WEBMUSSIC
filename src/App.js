@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { AboutUs } from "./AboutUs";
 import "./App.css";
 import { LeftMenu } from "./Components/LeftMenu";
 import SignIn from './Components/Login';
 import { MainContainer } from "./Components/MainContainer";
 import { MusicProvider } from './Components/MusicContext';
-import { Register } from './Components/Register';
 import MusicPlayer from './Components/MusicPlayer';
-
+import { Register } from './Components/Register';
 function Navigation() {
   return (
     <div>
     <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><a href="/Bay">Bay</a></li>
+     
+      {/* <li><Link to="/">Home</Link></li>
+      <li><a href="/Bay">Bay</a></li> */}
     </ul>
     </div>
   );
