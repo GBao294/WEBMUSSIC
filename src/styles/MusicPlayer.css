@@ -7,11 +7,12 @@
 }
 
 .musicPlayer .songImage {
-  position: absolute; left: 0.8vw;
+  position: absolute;
+  left: 1%;
   width: 62px; height: 62px;
   min-width: 62px;
   border-radius: 10px;
-  margin: 10px 5px;
+  margin: 10px 5px 10px 0;
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   object-fit: cover;
@@ -57,29 +58,22 @@
   padding-top: 10px;
 }
  /*left*/
-.musicPlayer .songAttributes .top .left .loved {
-  color:  #4bdde2 !important;
-  filter: drop-shadow(0px 0px 4px  #4bdde2);
-  position: absolute; 
-  top: 1.5vh; left: 5.6vw;
-  margin-left: 10px;
-}
 
 .songAttributes .top .left .songName,
 .songAttributes .top .left .artist {
-  position: absolute;
-  left: 6vw; 
   margin: 5px 5px;
+  position: absolute;
+  left: 6%;
 }
 
 .songAttributes .top .left .songName {
-  font-size: 16px; font-weight:normal;
-  top: 3.5vh;
+  font-size: 14px; font-weight:normal;
+  top: 20%;
 }
 
 .songAttributes .top .left .artist {
   font-size: 12px; font-weight: lighter;
-  top: 6.8vh;
+  top: 42%;
   color: #999999;
 }
 
@@ -247,8 +241,8 @@
 
 @media screen and (min-width: 550px) and (max-width: 1080px) {
   .musicPlayer .songImage {
-    width: 100px;
-    min-width: 100px;
-    height: 100px;
+    width: 62px;
+    min-width: 62px;
+    height: 62px;
   }
 }

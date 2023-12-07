@@ -16,7 +16,6 @@ import { MusicContext } from "./MusicContext";
 
 // { song, imgSrc, auto }
 function MusicPlayer() {
-  const [isLove, setLove] = useState(false);
   const [isPlaying, setPlay] = useState(false);
   //   duration state
   const [duration, setDuration] = useState(0);
@@ -91,10 +90,6 @@ function MusicPlayer() {
     setCurrenttime(progressBar.current.value);
   };
 
-  const changeSongLove = () => {
-    setLove(!isLove);
-  };
-
   return (
     <div className="musicPlayer">
       <img  className="songImage" src={ImgSrc} alt="" />
@@ -105,17 +100,6 @@ function MusicPlayer() {
           <div className="left">
             <h2 className="songName">{songN}</h2>
             <h2 className="artist">{Artist}</h2>
-            <div className="loved" onClick={changeSongLove}>
-              {isLove ? (
-                <i>
-                  <FaRegHeart />
-                </i>
-              ) : (
-                <i>
-                  <FaHeart />
-                </i>
-              )}
-            </div>
           </div>
 
           <div className="middle">

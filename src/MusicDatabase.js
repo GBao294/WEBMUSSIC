@@ -111,7 +111,74 @@ const Songs = [
       imgSrc:
         "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image%2F010-T%E1%BB%AB%20Ch%E1%BB%91i%20Hi%E1%BB%83u.jpg?alt=media&token=e1704b27-2285-4df8-b4be-c022959adb98",
     },
+    {
+      id: 10,
+      favourite: true,
+      songName: "Attention",
+      artist: "Charlie Puth",
+      view: "2.443.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F001%20-%20Attention.mp3?alt=media&token=03a65096-4697-49bb-9363-69ed2a3260ef",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F001%20-%20Attention.heic?alt=media&token=04872781-948f-4f85-bd8d-74a7ea9e2663",
+    },
+    {
+      id: 11,
+      favourite: true,
+      songName: "Lối Nhỏ",
+      artist: "Đen Vâu",
+      view: "2.443.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F002%20-%20L%E1%BB%91i%20Nh%E1%BB%8F.mp3?alt=media&token=8256323b-b2ea-4ec5-bdad-a7055530ad2f",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F002%20-%20L%E1%BB%91i%20Nh%E1%BB%8F.jpg?alt=media&token=f6f05e08-8826-44b8-8f76-98a8e2341a9c",
+    },
+    {
+      id: 12,
+      favourite: true,
+      songName: "Vì Anh Đâu Có Biết",
+      artist: "Vũ",
+      view: "2.443.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F003%20-%20V%C3%AC%20Anh%20%C4%90%C3%A2u%20C%C3%B3%20Bi%E1%BA%BFt.mp3?alt=media&token=c16087ca-e011-4c71-8b0d-d867f8cf4848",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F003%20-%20VADCB.jpg?alt=media&token=6a85792f-ff2a-436a-9204-962df37ff07d",
+    },
+    {
+      id: 13,
+      favourite: true,
+      songName: "Havana",
+      artist: "Camila Cabello",
+      view: "2.443.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F004%20-%20Havana.mp3?alt=media&token=b0feabbe-e32e-414b-8d50-7a43098bc598",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F004%20-%20Havana.jpg?alt=media&token=49480452-27f4-49db-b131-c213cb74abb8",
+    },
+    {
+      id: 14,
+      favourite: true,
+      songName: "Lọ Lem Hè Phố",
+      artist: "Trung tâm băng đĩa lậu hải ngoại",
+      view: "2.443.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F005%20-%20L%E1%BB%8D%20Lem%20H%C3%A8%20Ph%E1%BB%91.mp3?alt=media&token=d4018a21-f3ed-4028-bfc1-e66a15220079",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F005%20-%20L%E1%BB%8D%20Lem%20H%C3%A8%20Ph%E1%BB%91.jpg?alt=media&token=a7429b21-c042-4d16-98c3-ea8a3ff290f7",
+    },
+    {
+      id: 15,
+      favourite: true,
+      songName: "Hotel California",
+      artist: "Eagles",
+      view: "2.443.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F006%20-%20Hotel%20California.mp3?alt=media&token=d57df226-84f1-4a0a-bdf6-8227fbbfe21b",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F006%20-%20Hotel%20California.png?alt=media&token=b2482128-97fe-4ed9-bbb8-23a4a4979ac1",
+    }
   ];
+
   
   //Đẩy dữ liệu bài hát lên realtime database
-  set(ref(database, 'SongInformation/'), {Songs} );
+  set(ref(database, 'SongInformation/'), {Songs});

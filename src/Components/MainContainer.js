@@ -4,6 +4,9 @@ import "../styles/MainContainer.css";
 import { AudioList } from "./AudioList";
 import { Banner } from "./Banner";
 import { MusicProvider } from "./MusicContext";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { HeaderSong } from "./HeaderSong";
+import { HeaderBar } from "./HeaderBar";
 
 function MainContainer() {
   useEffect(() => {
@@ -19,8 +22,8 @@ function MainContainer() {
 
   return (
     <div className="mainContainer">
-      <Banner />
-
+      <HeaderBar />
+      <HeaderSong />
       <div className="menuList">
         <ul>
           <li>
