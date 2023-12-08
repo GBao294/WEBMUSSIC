@@ -310,7 +310,7 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* chrome and safari browser */
+
 .trackList .bottom input::before {
   position: absolute;
   content: "";
@@ -368,4 +368,34 @@
   .leftMenu .menuContainer ul li {
     margin: 25px 0;
   }
+}
+
+
+@media screen and (max-width: 768px) {
+  .leftMenu {
+      width: 200px; 
+      
+  }
+
+  .searchBox, .trackList, .playListContainer {
+      display: none; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  
+  .leftMenu {
+    width: 100%; 
+    padding: 10px; 
+}
+
+.searchBox {
+    display: none; 
+}
+
+.logoContainer .logo h2 {
+    font-size: 16px;
+}
+
 }

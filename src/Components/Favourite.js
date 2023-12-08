@@ -1,18 +1,33 @@
 import React, { useEffect, useState,  useContext } from "react";
-import { FaHeadphones, FaHeart, FaRegClock, FaRegHeart } from "react-icons/fa";
+import { FaHeadphones, FaRegClock, FaUsers } from "react-icons/fa";
 import "../styles/LeftMenu.css";
 import { Songs } from "./Songs";
 import { MusicContext } from './MusicContext';
+import { HeaderSong } from "./HeaderSong";
+import { HeaderBar } from "./HeaderBar";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { ref, update } from "firebase/database";
 import { database } from "../firebase-config";
 
-function AudioList() {
-  const [songs, setSongs] = useState(Songs);
-  const { song, toggleFavourite } = useContext(MusicContext);
-  const { setMainSong } = useContext(MusicContext);
+function Favourite() {
+    const { song } = useContext(MusicContext);
+    const favouriteSongs = song.filter(song => song.favourite);
+    const { setMainSong } = useContext(MusicContext);
 
-  useEffect(() => 
-  {
+
+    useEffect(() => {
+        const allLi = document.querySelector(".menuList").querySelectorAll("li");
+    
+        function changePopularActive() {
+          allLi.forEach((n) => n.classList.remove("active"));
+          this.classList.add("active");
+        }
+    
+        allLi.forEach((n) => n.addEventListener("click", changePopularActive));
+      }, []);
+
+    useEffect(() => 
+    {
     const allSongs = document.querySelectorAll(".songs");
     
     function changeActive() 
@@ -26,14 +41,31 @@ function AudioList() {
 
 
   return (
-    <div className="AudioList">
-      <h2 className="title">
-        The list <span>16 songs</span>
-      </h2>
+    <div className="mainContainer">
+      <HeaderBar />
+      <HeaderSong />
+      <div className="menuList">
+        <ul>
+          <li>
+            <Link to="/Bay">Popular</Link>
+          </li>
+          <li>
+            <Link to="/Favourite">Favourite</Link>
+          </li>
+        </ul>
 
+        <p>
+          <i><FaUsers /></i>
+          12.3M <span>Followers</span>
+        </p>
+      </div>
+      <div className="AudioList">
+        <h2 className="title">
+        Favourite Songs: <span>{favouriteSongs.length} songs</span>
+        </h2>
       <div className="songsContainer">
-        {song &&
-          song.map((song, index) => (
+        {favouriteSongs &&
+          favouriteSongs.map((song, index) => (
             <div
               className="songs"
               key={song?.id}
@@ -74,12 +106,7 @@ function AudioList() {
                       {song?.duration}
                     </p>
 
-                    <div
-                      className="favourite"
-                      onClick={() => toggleFavourite(song?.id)}
-                    >
-                      {song?.favourite ? (<i><FaHeart /></i>) : (<i><FaRegHeart /></i>)}
-                    </div>
+                    
 
                   </div>
                 </div>
@@ -88,6 +115,8 @@ function AudioList() {
           ))}
       </div>
     </div>
+    </div>
+    
   );
 }
-export  {AudioList} ;
+export  {Favourite} ;

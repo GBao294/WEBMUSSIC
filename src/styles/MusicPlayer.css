@@ -215,7 +215,7 @@
 }
 
 
-/*Responsive*/
+
 @media screen and (max-width: 550px) {
   .musicPlayer .songAttributes .bottom .currentTime {
     margin-right: 0px;
@@ -233,10 +233,6 @@
   .musicPlayer .songAttributes .bottom .progressBar {
     width: 110px;
   }
-  .musicPlayer .songAttributes .artist,
-  .musicPlayer .songAttributes .songName {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 550px) and (max-width: 1080px) {
@@ -244,5 +240,118 @@
     width: 62px;
     min-width: 62px;
     height: 62px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  .musicPlayer .songAttributes .bottom .progressBar {
+    width: 50%; 
+    left: 25%; 
+  }
+
+  .musicPlayer .songAttributes .bottom .currentTime,
+  .musicPlayer .songAttributes .bottom .duration {
+  
+    font-size: 10px;
+    left: 22%; 
+    right: 22%;
+  }
+
+
+  .musicPlayer .songAttributes .top .middle .playPause {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .musicPlayer .songAttributes .bottom .progressBar {
+    width: 45%;
+    left: 33%; 
+  }
+
+  .musicPlayer .songAttributes .bottom .currentTime {
+    
+    left: 24%;
+  }
+
+  .musicPlayer .songAttributes .bottom .duration {
+    
+    margin-right: 283px;
+  }
+
+  .musicPlayer .songAttributes .top .middle .back i,
+  .musicPlayer .songAttributes .top .middle .forward i {
+    margin: 0 30px;
+  }
+
+  .musicPlayer .songAttributes .top .middle {
+    margin-right: -95px;
+  }
+
+  .musicPlayer .songAttributes .top .left .artist,
+  .musicPlayer .songAttributes .top .left .songName {
+    padding-left: 30px;
+    padding-top: -30px;
+  }
+  
+
+  
+}
+
+@media screen and (max-width: 480px) {
+  .musicPlayer .songAttributes .bottom .progressBar {
+    width: 35%; 
+    left: 41%; 
+  }
+
+  .musicPlayer .songAttributes .bottom .currentTime {
+   
+    left: 28%;
+    font-size: 8px;
+  }
+
+  .musicPlayer .songAttributes .bottom .duration {
+    
+    margin-right: 140px;
+    font-size: 8px;
+  }
+
+  .musicPlayer .songAttributes .top .middle .back i,
+  .musicPlayer .songAttributes .top .middle .forward i {
+    margin: 0 20px;
+  }
+
+  .musicPlayer .songAttributes .top .middle .playPause {
+    width: 25px;
+    height: 25px;
+  }
+
+  .musicPlayer .songAttributes .top .middle {
+    margin-right: -110px;
+    font-size: 10px;
+  }
+
+  .musicPlayer .songImage {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .musicPlayer .songAttributes .top .left .artist,
+  .musicPlayer .songAttributes .top .left .songName {
+    padding-left: 20px;
+    padding-top: -40px;
+    font-size: 8px;
+  }
+  .musicPlayer .songAttributes .right i {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  .musicPlayer .songAttributes .right .download {
+    font-size: 13px;
+    padding-left: 20px;
   }
 }

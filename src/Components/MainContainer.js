@@ -7,6 +7,8 @@ import { MusicProvider } from "./MusicContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { HeaderSong } from "./HeaderSong";
 import { HeaderBar } from "./HeaderBar";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {Favourite} from "./Favourite";
 
 function MainContainer() {
   useEffect(() => {
@@ -27,26 +29,15 @@ function MainContainer() {
       <div className="menuList">
         <ul>
           <li>
-            <a href="#">Popular</a>
+            <Link to="/Bay">Popular</Link>
           </li>
           <li>
-            <a href="#">Albums</a>
-          </li>
-          <li>
-            <a href="#">Songs</a>
-          </li>
-          <li>
-            <a href="#">Fans</a>
-          </li>
-          <li>
-            <a href="#">About</a>
+            <Link to="/Favourite">Favourite</Link>
           </li>
         </ul>
 
         <p>
-          <i>
-            <FaUsers />
-          </i>
+          <i><FaUsers /></i>
           12.3M <span>Followers</span>
         </p>
       </div>

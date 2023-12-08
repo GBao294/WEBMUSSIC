@@ -8,6 +8,8 @@ import { MainContainer } from "./Components/MainContainer";
 import { MusicProvider } from './Components/MusicContext';
 import MusicPlayer from './Components/MusicPlayer';
 import { Register } from './Components/Register';
+import { AudioList } from './Components/AudioList';
+import { Favourite } from './Components/Favourite';
 function Navigation() {
   return (
     <div>
@@ -63,6 +65,17 @@ function App() {
           <>
             <AboutUs/>
           </>
+        } />
+        <Route path="/Favourite" element={
+          <>
+          <div className="App">
+            <MusicProvider>
+              <LeftMenu />
+              <Favourite />
+              <MusicPlayer/>
+            </MusicProvider>
+            </div>
+          </> 
         } />
       </Routes>
     </div>

@@ -29,7 +29,7 @@
     margin:2.401vh 0.28vw 3.955vh 0;
 }
 
-/*Avatar*/
+
 #header-bar .avatar-btn{
     display: block;
     position: relative;
@@ -46,7 +46,7 @@
     border-radius: 50%;
 }
 
-/*Avatar subnav*/
+
 #avatar-subnav{
     display: none;
     position: absolute;
@@ -70,14 +70,14 @@
     font-size: 18px;
 }
 
-/*bell button*/
+
 #header-bar .bell-btn{
     position: relative;
     margin:2.401vh 0.28vw 3.955vh 0.28vw; 
     float: right;
 }
 
-/*About button*/
+
 #header-bar .about-btn{
     position: relative;
     width: 8.126vw; height: 4.802vh;
@@ -95,7 +95,7 @@
     color: #fff;
 }
 
-/*premium button*/
+
 #header-bar .premium-btn{
     border: none;
     display: block;
@@ -114,7 +114,7 @@
     color: #000;
 }
 
-/*button hover*/
+
 .left-btn:hover,
 .right-btn:hover{
     cursor:not-allowed;
@@ -149,4 +149,62 @@
     top: 0; right: 0;
     cursor: pointer;
     background-color: #b7b7b7;
+}
+
+
+@media screen and (max-width: 768px) {
+    #header-bar {
+        flex-direction: row; 
+        height: auto; 
+        flex-wrap: wrap; 
+    }
+
+    .header-btn {
+        margin: 5px;
+    }
+
+ 
+    .about-btn .about-text,
+    .premium-btn .premium-text {
+        font-size: 12px; 
+    }
+
+    #header-bar .avatar-btn {
+        margin-right: 5px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0; 
+    }
+
+   
+    #header-bar .header-btn,
+    #header-bar .about-btn,
+    #header-bar .premium-btn {
+        width: 11%; 
+        margin: 5px; 
+        
+    }
+
+   
+    .about-btn .about-text,
+    .premium-btn .premium-text {
+        text-align: center; 
+        font-size: 8px; 
+    }
+
+  
+    #avatar-btn:active + #avatar-subnav,
+    #avatar-btn:focus + #avatar-subnav {
+        display: block; 
+        width: 100%; 
+    }
+
+    #header-bar .avatar-btn {
+        margin-right: 65px; 
+    }
 }
