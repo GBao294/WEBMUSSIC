@@ -6,7 +6,9 @@ import { MusicProvider } from "./MusicContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { HeaderSong } from "./HeaderSong";
 import { HeaderBar } from "./HeaderBar";
-import {Songs} from "./Songs"
+import { Songs } from "./Songs";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {Favourite} from "./Favourite";
 
 function MainContainer() {
   // useEffect(() => {
@@ -26,6 +28,22 @@ function MainContainer() {
       <HeaderBar style={BGColor} />
       <HeaderSong />
       <AudioList Songs={Songs} />
+      <div className="menuList">
+        <ul>
+          <li>
+            <Link to="/Bay">Popular</Link>
+          </li>
+          <li>
+            <Link to="/Favourite">Favourite</Link>
+          </li>
+        </ul>
+
+        <p>
+          <i><FaUsers /></i>
+          12.3M <span>Followers</span>
+        </p>
+      </div>
+      <AudioList />
     </div>
   );
 }

@@ -12,7 +12,7 @@ import { US_UK } from './PlayList/US-UK';
 import { Vpop } from './PlayList/Vpop';
 import { MyPlaylist } from './PlayList/MyPlaylist';
 import { MyPlaylist2 } from './PlayList/MyPlaylist2';
-
+import { Favourite } from './Components/Favourite';
 function Navigation() {
   return (
     <div>
@@ -116,6 +116,17 @@ function App() {
           </MusicProvider>
           </div>
           </>
+        } />
+        <Route path="/Favourite" element={
+          <>
+          <div className="App">
+            <MusicProvider>
+              <LeftMenu />
+              <Favourite />
+              <MusicPlayer/>
+            </MusicProvider>
+            </div>
+          </> 
         } />
       </Routes>
     </div>

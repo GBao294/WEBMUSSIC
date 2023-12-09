@@ -4,7 +4,7 @@ import {database} from "../firebase-config"
 import { ref, onValue } from "firebase/database";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from "@fortawesome/free-regular-svg-icons";
-import { AudioList } from "../Components/AudioList";
+import { AudioList2 } from "../Components/AudioList2";
 import { useState } from "react";
 
 function MyPlaylist2(){
@@ -49,7 +49,7 @@ const BGColor = "linear-gradient(#2b410d,#11150c)";
                 <li className="clock"><FontAwesomeIcon icon={faClock}/></li>
                </ul>
             </div>
-            <AudioList Songs={PL2Song} />
+            <AudioList2 Songs={PL2Song} />
         </div>
     )
 }

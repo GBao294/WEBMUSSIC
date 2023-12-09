@@ -4,7 +4,7 @@ import {database} from "../firebase-config"
 import { ref, onValue } from "firebase/database";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from "@fortawesome/free-regular-svg-icons";
-import { AudioList } from "../Components/AudioList";
+import { AudioList2 } from "../Components/AudioList2";
 import { Songs } from "../Components/Songs";
 
 function US_UK(){
@@ -50,7 +50,7 @@ const BGColor = "linear-gradient(#012437,#052a3d)";
                 <li className="clock"><FontAwesomeIcon icon={faClock}/></li>
                </ul>
             </div>
-            <AudioList Songs={UsUkSong} />
+            <AudioList2 Songs={UsUkSong} />
         </div>
     )
 }

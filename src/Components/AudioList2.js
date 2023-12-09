@@ -6,7 +6,7 @@ import { MusicContext } from './MusicContext';
 import { ref, update } from "firebase/database";
 import { database } from "../firebase-config";
 
-function AudioList({Songs}) {
+function AudioList2({Songs}) {
   const [songs, setSongs] = useState(Songs);
   const { song, toggleFavourite } = useContext(MusicContext);
   const { setMainSong } = useContext(MusicContext);
@@ -28,8 +28,8 @@ function AudioList({Songs}) {
   return (
     <div className="AudioList">
       <div className="songsContainer">
-        {song &&
-          song.map((song, index) => (
+        {songs &&
+          songs.map((song, index) => (
             <div
               className="songs"
               key={song?.id}
@@ -83,4 +83,4 @@ function AudioList({Songs}) {
     </div>
   );
 }
-export  {AudioList} ;
+export  {AudioList2} ;

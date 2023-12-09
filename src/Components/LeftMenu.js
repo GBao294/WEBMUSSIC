@@ -42,7 +42,9 @@ function LeftMenu() {
           <FaEllipsisH />
         </i>
       </div>
-      
+
+      <Menu listObject={MenuList} />
+
       <div className="searchBox">
         <i> <BiSearchAlt /> </i>
         <input
@@ -61,8 +63,7 @@ function LeftMenu() {
           </a>
         ))}
       </div>
-
-      <Menu title={"Menu"} listObject={MenuList} />
+      
       <MenuPlayList />
     </div>
   );
