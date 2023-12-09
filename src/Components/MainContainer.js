@@ -27,7 +27,7 @@ function MainContainer() {
     <div className="mainContainer">
       <HeaderBar style={BGColor} />
       <HeaderSong />
-      <AudioList Songs={Songs} />
+      {/* <AudioList Songs={Songs} /> */}
       <div className="menuList">
         <ul>
           <li>

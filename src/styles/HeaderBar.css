@@ -1,8 +1,9 @@
 #header-bar {
-    position: fixed;
+    position:absolute;
     display: inline-block;
     height: 10.10vh; width: 100%;
     z-index: 5;
+    background-color: linear-gradient(#012437,#052a3d);
 }
 
 #header-bar .header-btn{
@@ -80,7 +81,7 @@
 #header-bar .about-btn{
     position: relative;
     width: 8.126vw; height: 4.802vh;
-    background-color: #011a27;
+    background-color: #011a27; 
     border-radius: 40px;
     float: right;
     margin: 2.401vh 0.28vw 3.955vh 0.28vw;

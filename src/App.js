@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { AboutUs } from "./AboutUs";
+import { AboutUs } from "./Components/AboutUs";
 import "./App.css";
 import { LeftMenu } from "./Components/LeftMenu";
 import SignIn from './Components/Login';
@@ -13,6 +13,8 @@ import { Vpop } from './PlayList/Vpop';
 import { MyPlaylist } from './PlayList/MyPlaylist';
 import { MyPlaylist2 } from './PlayList/MyPlaylist2';
 import { Favourite } from './Components/Favourite';
+import { HeaderBar } from './Components/HeaderBar';
+import { HeaderBarAboutUs } from './Components/HeaderBarAboutUs';
 function Navigation() {
   return (
     <div>
@@ -28,6 +30,7 @@ function Navigation() {
 function App() {
   // const navigate = useNavigate();
   const [showText, setShowText] = useState(true);
+  const BGColor = "linear-gradient(#012437,#052a3d)";
 
   useEffect(() => {
     // Check the current route and update state accordingly
@@ -66,7 +69,9 @@ function App() {
         } />
          <Route path="/AboutUs" element={
           <>
-            <AboutUs/>
+              <HeaderBarAboutUs style={BGColor} />
+              <AboutUs />
+          
           </>
         } />
         
