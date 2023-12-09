@@ -64,7 +64,6 @@ function LeftMenu() {
 
       <Menu title={"Menu"} listObject={MenuList} />
       <MenuPlayList />
-      {/* <TrackList trackName={"Take On Me"} artistName={"A-ha"} /> */}
     </div>
   );
 }

@@ -5,7 +5,7 @@ const MenuList = [
     id: 1,
     icon: <BsFillHouseFill />,
     name: "Home",
-    link: "#"
+    link: "/Bay"
   },
   // {
   //   id: 2,

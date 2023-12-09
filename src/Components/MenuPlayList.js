@@ -3,6 +3,7 @@ import "../styles/LeftMenu.css";
 import { FaPlus } from "react-icons/fa";
 import { BsMusicNoteList, BsTrash } from "react-icons/bs";
 import { PlayList } from "./PlayList";
+import { Link } from "react-router-dom";
 
 function MenuPlayList() {
   return (
@@ -21,7 +22,7 @@ function MenuPlayList() {
               <i className="list">
                 <BsMusicNoteList />
               </i>
-              <p>{list.name}</p>
+              <Link className="listType" to={list.link}>{list.name}</Link>
               <i className="trash">
                 <BsTrash />
               </i>

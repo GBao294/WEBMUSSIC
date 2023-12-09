@@ -8,6 +8,11 @@ import { MainContainer } from "./Components/MainContainer";
 import { MusicProvider } from './Components/MusicContext';
 import MusicPlayer from './Components/MusicPlayer';
 import { Register } from './Components/Register';
+import { US_UK } from './PlayList/US-UK';
+import { Vpop } from './PlayList/Vpop';
+import { MyPlaylist } from './PlayList/MyPlaylist';
+import { MyPlaylist2 } from './PlayList/MyPlaylist2';
+
 function Navigation() {
   return (
     <div>
@@ -62,6 +67,54 @@ function App() {
          <Route path="/AboutUs" element={
           <>
             <AboutUs/>
+          </>
+        } />
+        
+        <Route path="/UsUkMusic" element={
+          <>
+          <div className="App">
+          <MusicProvider>
+            <LeftMenu />
+            <US_UK />
+            <MusicPlayer/>
+          </MusicProvider>
+          </div>
+          </>
+        } />
+        
+        <Route path="/Vpop" element={
+          <>
+          <div className="App">
+          <MusicProvider>
+            <LeftMenu />
+            <Vpop/>
+            <MusicPlayer/>
+          </MusicProvider>
+          </div>
+          </>
+        } />
+
+        <Route path="/myPlaylist" element={
+          <>
+          <div className="App">
+          <MusicProvider>
+            <LeftMenu />
+            <MyPlaylist />
+            <MusicPlayer/>
+          </MusicProvider>
+          </div>
+          </>
+        } />
+
+        <Route path="/Playlist2" element={
+          <>
+          <div className="App">
+          <MusicProvider>
+            <LeftMenu />
+            <MyPlaylist2 />
+            <MusicPlayer/>
+          </MusicProvider>
+          </div>
           </>
         } />
       </Routes>

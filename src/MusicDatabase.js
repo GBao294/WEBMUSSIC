@@ -4,6 +4,7 @@ import { ref, set } from "firebase/database";
 const Songs = [
     {
       id: 0,
+      type: "Vpop",
       favourite: false,
       songName: "Don't Côi",
       artist: "RPT Orijinn, Ronboogz",
@@ -15,6 +16,7 @@ const Songs = [
     },
     {
       id: 1,
+      type: "US-UK",
       favourite: false,
       songName: "Legend Never Die",
       artist: "Against The Current",
@@ -26,6 +28,7 @@ const Songs = [
     },
     {
       id: 2,
+      type: "Vpop",
       favourite: true,
       songName: "Bạn Đời",
       artist: "Karik, GDucky",
@@ -37,6 +40,7 @@ const Songs = [
     },
     {
       id: 3,
+      type: "Vpop",
       favourite: false,
       songName: "Chúng ta không thuộc về nhau",
       artist: "Sơn Tùng M-TP",
@@ -48,6 +52,7 @@ const Songs = [
     },
     {
       id: 4,
+      type: "Vpop",
       favourite: false,
       songName: "Em Là",
       artist: "MONO, Onionn",
@@ -69,6 +74,7 @@ const Songs = [
     },
     {
       id: 6,
+      type: "Vpop",
       favourite: true,
       songName: "There's No One At All",
       artist: "Sơn Tùng M-TP",
@@ -80,6 +86,7 @@ const Songs = [
     },
     {
       id: 7,
+      type: "Vpop",
       favourite: false,
       songName: "Từng Quen",
       artist: "Wren Evans, itsnk",
@@ -91,6 +98,7 @@ const Songs = [
     },
     {
       id: 8,
+      type: "Vpop",
       favourite: false,
       songName: "Exit Sign",
       artist: "HIEUTHUHAI, marzuz",
@@ -102,6 +110,7 @@ const Songs = [
     },
     {
       id: 9,
+      type: "Vpop",
       favourite: true,
       songName: "Từ Chối Hiểu",
       artist: "RHYDER",
@@ -113,50 +122,55 @@ const Songs = [
     },
     {
       id: 10,
+      type: "US-UK",
       favourite: true,
       songName: "Attention",
       artist: "Charlie Puth",
       view: "2.443.756",
-      duration: "04:08",
+      duration: "03:51",
       song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F001%20-%20Attention.mp3?alt=media&token=03a65096-4697-49bb-9363-69ed2a3260ef",
       imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F001%20-%20Attention.heic?alt=media&token=04872781-948f-4f85-bd8d-74a7ea9e2663",
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2FAttention.jfif?alt=media&token=b19d6c6e-e901-4c51-b2ce-662325f2705a",
     },
     {
       id: 11,
+      type: "Vpop",
       favourite: true,
       songName: "Lối Nhỏ",
       artist: "Đen Vâu",
       view: "2.443.756",
-      duration: "04:08",
+      duration: "04:59",
       song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F002%20-%20L%E1%BB%91i%20Nh%E1%BB%8F.mp3?alt=media&token=8256323b-b2ea-4ec5-bdad-a7055530ad2f",
       imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F002%20-%20L%E1%BB%91i%20Nh%E1%BB%8F.jpg?alt=media&token=f6f05e08-8826-44b8-8f76-98a8e2341a9c",
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2FLoi%20Nho.jfif?alt=media&token=d610bdb2-f455-412b-a8df-03ac27e6994c",
     },
     {
       id: 12,
+      type: "Vpop",
       favourite: true,
       songName: "Vì Anh Đâu Có Biết",
       artist: "Vũ",
       view: "2.443.756",
-      duration: "04:08",
+      duration: "04:20",
       song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F003%20-%20V%C3%AC%20Anh%20%C4%90%C3%A2u%20C%C3%B3%20Bi%E1%BA%BFt.mp3?alt=media&token=c16087ca-e011-4c71-8b0d-d867f8cf4848",
       imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F003%20-%20VADCB.jpg?alt=media&token=6a85792f-ff2a-436a-9204-962df37ff07d",
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2FVADCB.jfif?alt=media&token=16be85d3-aab2-44c7-a12c-6fa8ee6fb8a6",
     },
     {
       id: 13,
+      type: "US-UK",
       favourite: true,
       songName: "Havana",
-      artist: "Camila Cabello",
+      artist: "Camila Cabello ft. Young Thug",
       view: "2.443.756",
-      duration: "04:08",
+      duration: "03:38",
       song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F004%20-%20Havana.mp3?alt=media&token=b0feabbe-e32e-414b-8d50-7a43098bc598",
       imgSrc:
         "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F004%20-%20Havana.jpg?alt=media&token=49480452-27f4-49db-b131-c213cb74abb8",
     },
     {
       id: 14,
+      type: "Vpop",
       favourite: true,
       songName: "Lọ Lem Hè Phố",
       artist: "Trung tâm băng đĩa lậu hải ngoại",
@@ -168,17 +182,65 @@ const Songs = [
     },
     {
       id: 15,
+      type: "US-UK",
       favourite: true,
       songName: "Hotel California",
       artist: "Eagles",
       view: "2.443.756",
-      duration: "04:08",
+      duration: "06:44",
       song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Music2%2F006%20-%20Hotel%20California.mp3?alt=media&token=d57df226-84f1-4a0a-bdf6-8227fbbfe21b",
       imgSrc:
-        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2F006%20-%20Hotel%20California.png?alt=media&token=b2482128-97fe-4ed9-bbb8-23a4a4979ac1",
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/Image2%2FHotel%20Cali.jfif?alt=media&token=0537e2a0-f6ca-45a0-8715-a611fb6a1609",
+    },
+    {
+      id: 16,
+      type: "US-UK",
+      favourite: true,
+      songName: "We Don't Talk Anymore",
+      artist: "Charlie Puth ft. Selena Gomez",
+      view: "4.543.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/US-UK%2F001%20-%20Charlie%20Puth%20-%20We%20Don't%20Talk%20Anymore%20(feat.%20Selena%20Gomez).mp3?alt=media&token=c1191f0d-9de6-4eae-8c13-4d6c0ba1b513",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/IMGUS-UK%2F001%20-%20We%20Don't%20Talk%20Anymore.png?alt=media&token=54f34e21-d2ff-43be-b6b8-c7b4b58b0cf4",
+    },
+    {
+      id: 17,
+      type: "US-UK",
+      favourite: false,
+      songName: "Closer",
+      artist: "The Chainsmokers ft. Halsey",
+      view: "3.443.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/US-UK%2F002%20-%20The%20Chainsmokers%20-%20Closer%20(Lyric)%20ft.%20Halsey.mp3?alt=media&token=0a384af5-829f-4d7a-b788-2a54630b6e33",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/IMGUS-UK%2F002%20-%20Closer.png?alt=media&token=84ee28d0-7b7a-43e0-a088-15a792b2a3ff",
+    },
+    {
+      id: 18,
+      type: "China",
+      favourite: false,
+      songName: "Thu Thương Biệt Luyến",
+      artist: "Chính Là Nam Phương Khải",
+      view: "1.500.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/China%2F001%20-%20Vietsub%20-%20PinyinThu%20Th%C6%B0%C6%A1ng%20Bi%E1%BB%87t%20Luy%E1%BA%BFn%20%20Ch%C3%ADnh%20L%C3%A0%20Nam%20Ph%C6%B0%C6%A1ng%20Kh%E1%BA%A3i%20-%20%E7%A7%8B%E6%AE%87%E5%88%AB%E6%81%8B%20-%20%E5%B0%B1%E6%98%AF%E5%8D%97%E6%96%B9%E5%87%B1.mp3?alt=media&token=b19a149c-7fe3-4de3-a73f-f8a76971f572",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/IMG-China%2F001%20-%20Thu%20Th%C6%B0%C6%A1ng%20Bi%E1%BB%87t%20Luy%E1%BA%BFn.png?alt=media&token=43a683a5-a1fb-4640-971b-c69653e67d21",
+    },
+    {
+      id: 19,
+      type: "China",
+      favourite: true,
+      songName: "Phi Điểu và Ve Sầu",
+      artist: "Nhậm Nhiên",
+      view: "1.443.756",
+      duration: "04:08",
+      song: "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/China%2F002%20-%20%5BVietsub%2BTiktok%5D%20Phi%20%C4%90i%E1%BB%83u%20V%C3%A0%20Ve%20S%E1%BA%A7u%20-%20Nh%E1%BA%ADm%20Nhi%C3%AAn%20-%20%E9%A3%9E%E9%B8%9F%E5%92%8C%E8%9D%89%20-%20%E4%BB%BB%E7%84%B6%20-%20Nh%E1%BA%A1c%20Hoa%20t%C3%A2m%20tr%E1%BA%A1ng.mp3?alt=media&token=bc8d0807-12e5-4f6f-bad7-6ff4786b3a11",
+      imgSrc:
+        "https://firebasestorage.googleapis.com/v0/b/music-9ae9f.appspot.com/o/IMG-China%2F002%20-%20Phi%20%C4%90i%E1%BB%83u%20v%C3%A0%20Ve%20S%E1%BA%A7u.png?alt=media&token=9b5f84c9-e4f0-4613-ba50-192932bcf3bf",
     }
   ];
 
-  
   //Đẩy dữ liệu bài hát lên realtime database
   set(ref(database, 'SongInformation/'), {Songs});

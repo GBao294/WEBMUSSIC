@@ -1,28 +1,34 @@
 const PlayList = [
   {
     id: 1,
-    name: "Top Hit 2021-USA",
+    name: "US-UK music",
+    link: "/UsUkMusic",
   },
   {
     id: 2,
-    name: "Dance",
+    name: "Vietnamese pop",
+    link: "/Vpop",
   },
   {
     id: 3,
-    name: "Relaxing Music",
+    name: "My Playlist",
+    link: "/myPlaylist",
   },
   {
     id: 4,
-    name: "Instrumental",
-  },
-  {
-    id: 5,
-    name: "Hip Pop",
-  },
-  {
-    id: 6,
-    name: "Workout Musics",
-  },
+    name: "Playlist 2",
+    link: "/Playlist2",
+  }
+  // {
+  //   id: 5,
+  //   name: "Hip Pop",
+  //   link: "/UsUkMusic",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Workout Musics",
+  //   link: "/UsUkMusic",
+  // },
 ];
 
 export { PlayList };

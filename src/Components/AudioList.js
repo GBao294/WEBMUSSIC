@@ -2,10 +2,9 @@ import React, { useEffect, useState,  useContext } from "react";
 import { FaHeadphones, FaHeart, FaRegClock, FaRegHeart } from "react-icons/fa";
 import "../styles/LeftMenu.css";
 import MusicPlayer from "./MusicPlayer";
-import { Songs } from "./Songs";
 import { MusicContext } from './MusicContext';
 
-function AudioList() {
+function AudioList({Songs}) {
   const [songs, setSongs] = useState(Songs);
   const [song, setSong] = useState(songs[0].song);
   const [img, setImage] = useState(songs[0].imgSrc);
@@ -40,13 +39,9 @@ function AudioList() {
 
   return (
     <div className="AudioList">
-      <h2 className="title">
-        The list <span>10 songs</span>
-      </h2>
-
       <div className="songsContainer">
-        {songs &&
-          songs.map((song, index) => (
+        {songs && 
+          songs.slice(0,12).map((song, index) => (
             <div
               className="songs"
               key={song?.id}
@@ -81,9 +76,6 @@ function AudioList() {
                     </p>
 
                     <p className="duration">
-                      <i>
-                        <FaRegClock />
-                      </i>
                       {song?.duration}
                     </p>
 
