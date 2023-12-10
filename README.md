@@ -69,3 +69,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 "# WEBMUSSIC" 
+
+
+
+
+
+
+
+CÁCH CHẠY CODE : 
+Khởi chạy : npm install 
+npm start 
+Sau đó vào vnp chạy : npm start 
+và chạy nodejs Amount.js : node Amount.js
