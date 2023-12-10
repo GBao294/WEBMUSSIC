@@ -1,3 +1,13 @@
+
+CÁCH CHẠY CODE : 
+Khởi chạy : npm install 
+npm start 
+Sau đó vào vnp chạy : npm start 
+và chạy nodejs Amount.js : node Amount.js
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -75,9 +85,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-
-CÁCH CHẠY CODE : 
-Khởi chạy : npm install 
-npm start 
-Sau đó vào vnp chạy : npm start 
-và chạy nodejs Amount.js : node Amount.js
