@@ -29,11 +29,19 @@ const SignIn = () => {
             <div>
                 <section>
                     {/* <div className="background2"></div> */}
+<<<<<<< HEAD
                     <div className="form-box form2">
                         <div className="button-box">
                             <div className="form-value">
                                 <form action="" onSubmit={signIn}>
                                     <h2 className='Register-head'>Login</h2>
+=======
+                    <div className="form-box">
+                        <div className="button-box">
+                            <div className="form-value">
+                                <form action="" onSubmit={signIn}>
+                                    <h2>Login</h2>
+>>>>>>> 1c466ff79c3a804b1b7bb6a9e19c701291ea5c69
                                     <div className="inputbox">
                                         <ion-icon name="mail-outline"></ion-icon>
                                         <input type="email" required
@@ -49,14 +57,23 @@ const SignIn = () => {
                                         <label htmlFor="">Password</label>
                                     </div>
                                     <div className="remember">
+<<<<<<< HEAD
                                         <label htmlFor=""><input type="checkbox" /> Remember Me</label>
                                     </div>
                                     {error && <div className="error-message">{error}</div>}
+=======
+                                        <label htmlFor=""><input type="checkbox" />Remember Me</label>
+                                    </div>
+>>>>>>> 1c466ff79c3a804b1b7bb6a9e19c701291ea5c69
                                     <button type="submit">Login</button>
                                     <div className="register">
                                         <p>Or <a href="/Register">Register</a> if you do not have an account</p>
                                     </div>
                                 </form>
+<<<<<<< HEAD
+=======
+                                {error && <div className="error-message">{error}</div>}
+>>>>>>> 1c466ff79c3a804b1b7bb6a9e19c701291ea5c69
                             </div>
                         </div>
                     </div>
